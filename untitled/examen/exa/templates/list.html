@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USERS</title>
+</head>
+<table>
+    <tr>
+
+    <td>
+        {% for user in users%}
+            <a href="http://localhost:8000/exa/user/{{user.number_of_login}}/">{{user.first_name}}</a> </br>
+        {% endfor %}
+    </td>
+    </tr>
+</table>
+
+<br />
+<br />
+
+</body>
+</html>
